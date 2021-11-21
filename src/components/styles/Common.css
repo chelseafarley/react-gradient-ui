@@ -1,0 +1,39 @@
+.regradui-border-button-container, .regradui-border-button, .regradui-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regradui-border-button-container:hover, .regradui-button:hover {
+  opacity: 0.8;
+}
+
+.regradui-shadow {
+  box-shadow: 1px 1px 15px #ddd;
+}
+
+.regradui-shadow:hover {
+  box-shadow: 1px 1px 15px #ccc;
+}
+
+.regradui-text {
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.regradui-switch {
+  display: inline-flex;
+  align-items: center;
+}
+
+.regradui-switch-circle {
+  position: relative;
+  -webkit-transition: all 750ms ease;  
+  -moz-transition: all 750ms ease;  
+  -o-transition: all 750ms ease;  
+  -ms-transition: all 750ms ease;  
+  transition: all 750ms ease;
+}
