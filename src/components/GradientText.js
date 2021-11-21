@@ -31,7 +31,7 @@ class GradientText extends React.Component {
 
   render() {
     return(
-      <span class={this.getTextClasses()} style={this.textStyle}>
+      <span className={this.getTextClasses()} style={this.textStyle}>
         {this.props.children}
       </span>
     )

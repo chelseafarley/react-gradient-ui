@@ -7,9 +7,6 @@ class GradientBorderButton extends React.Component {
 
     let defaults = {
       borderWidth: 3,
-      borderRadius: 50,
-      width: 100,
-      height: 100,
       gradientAngle: 90,
       fromColor: "red",
       toColor: "orange",
@@ -21,17 +18,16 @@ class GradientBorderButton extends React.Component {
       ...this.props.options
     };
 
+    let borderRadius = options.borderRadius ? (options.borderWidth + options.borderRadius) + "px" : undefined;
     this.buttonContainerStyle = {
       padding: options.borderWidth + "px",
-      borderRadius: (options.borderWidth + options.borderRadius) + "px",
+      borderRadius: borderRadius,
       background: "linear-gradient(" + options.gradientAngle + "deg, " + options.fromColor + "," + options.toColor + ")",
       ...this.props.buttonContainerStyle
     };
 
     this.buttonStyle = {
-      borderRadius: (options.borderWidth + options.borderRadius) + "px",
-      width: options.width + "px",
-      height: options.height + "px",
+      borderRadius: borderRadius,
       backgroundColor: options.backgroundColor,
       ...this.props.buttonStyle
     };
@@ -53,8 +49,8 @@ class GradientBorderButton extends React.Component {
   render() {
     
     return(
-      <div class={this.getContainerClasses()} style={this.buttonContainerStyle}>
-        <div class={this.getButtonClasses()} style={this.buttonStyle}>
+      <div className={this.getContainerClasses()} style={this.buttonContainerStyle}>
+        <div className={this.getButtonClasses()} style={this.buttonStyle}>
           {this.props.children}
         </div>
       </div>

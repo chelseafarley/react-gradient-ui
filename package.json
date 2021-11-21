@@ -1,15 +1,18 @@
 {
   "name": "react-gradient-ui",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Gradient UI elements for use in React websites.",
-  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chelseafarley/react-gradient-ui.git"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
   "keywords": [
     "react",
     "gradient"
