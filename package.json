@@ -1,6 +1,6 @@
 {
   "name": "react-gradient-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Gradient UI elements for use in React websites.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
